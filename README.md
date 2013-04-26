@@ -1,6 +1,6 @@
 Viz-CollectionActivity
 ======================
-See what your collection has been up to.
+This is a Processing sketch to see what your collection has been up to.
 
 Requirements
 ------------
