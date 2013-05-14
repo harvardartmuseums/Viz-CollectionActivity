@@ -24,7 +24,7 @@ public class Artwork {
   private float colorNow = colorDead;
   private boolean isAlive = false;
   private float decayRate = 0.0;
-  private int sizeMultiplier = 1;
+  private int sizeMultiplier = 3;
   private int daysAlive = 0;
    
   public Artwork(String _data) {
@@ -93,7 +93,7 @@ public class Artwork {
         noStroke();
         pushMatrix();        
         translate(location.x, location.y);
-        ellipse(0, 0, ARTWORK_SIZE*2, ARTWORK_SIZE*2);        
+        ellipse(0, 0, ARTWORK_SIZE*sizeMultiplier, ARTWORK_SIZE*sizeMultiplier);        
         popMatrix();    
       }
 
