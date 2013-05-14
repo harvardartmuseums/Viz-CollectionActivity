@@ -22,7 +22,7 @@ void setup() {
   LocalDate startDate = new LocalDate("2009-05-18");
   LocalDate endDate = new LocalDate("2013-02-20");
 
-  int days = Days.daysBetween(startDate, endDate).getDays();
+  int days = Days.daysBetween(startDate, endDate).getDays() + 1; //adding one ensures the endDate is included in the list of days to render
   for (int i=0; i < days; i++) {
       LocalDate d = startDate.withFieldAdded(DurationFieldType.days(), i);
       dates.add(d);
